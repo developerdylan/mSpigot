@@ -91,7 +91,7 @@
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
-      <version>1.16.10</version>
+      <version>1.18.4</version>
     </dependency>
     <!-- testing -->
     <dependency>
@@ -236,15 +236,15 @@
                 </relocation>
                 !-->
                 <relocation>
-                    <pattern>org.bukkit.craftbukkit</pattern>
-                    <shadedPattern>org.bukkit.craftbukkit.v${minecraft_version}</shadedPattern>
-                    <excludes>
-                        <exclude>org.bukkit.craftbukkit.Main*</exclude>
-                    </excludes>
+                  <pattern>org.bukkit.craftbukkit</pattern>
+                  <shadedPattern>org.bukkit.craftbukkit.v${minecraft_version}</shadedPattern>
+                  <excludes>
+                    <exclude>org.bukkit.craftbukkit.Main*</exclude>
+                  </excludes>
                 </relocation>
                 <relocation>
-                    <pattern>net.minecraft.server</pattern>
-                    <shadedPattern>net.minecraft.server.v${minecraft_version}</shadedPattern>
+                  <pattern>net.minecraft.server</pattern>
+                  <shadedPattern>net.minecraft.server.v${minecraft_version}</shadedPattern>
                 </relocation>
               </relocations>
               <filters>
@@ -286,10 +286,10 @@
         <version>2.11</version>
         <configuration>
           <workingDirectory>${basedir}/target/test-server</workingDirectory>
-            <excludes>
-              <exclude>org/bukkit/craftbukkit/updater/BukkitDLUpdaterServiceTest.java</exclude>
-              <exclude>org/bukkit/craftbukkit/inventory/ItemStack*Test.java</exclude>
-            </excludes>
+          <excludes>
+            <exclude>org/bukkit/craftbukkit/updater/BukkitDLUpdaterServiceTest.java</exclude>
+            <exclude>org/bukkit/craftbukkit/inventory/ItemStack*Test.java</exclude>
+          </excludes>
         </configuration>
       </plugin>
       <plugin>
