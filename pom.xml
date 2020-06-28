@@ -1,0 +1,25 @@
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>mSpigot</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <parent>
+        <groupId>com.ddylan</groupId>
+        <artifactId>tbd</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <name>mSpigot</name>
+    <description>Production version of Spigot for ddylan's servers.</description>
+
+    <modules>
+        <module>mSpigot-server</module>
+        <module>mSpigot-api</module>
+    </modules>
+
+</project>
