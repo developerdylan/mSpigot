@@ -6,18 +6,6 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
-    <content url="file://$MODULE_DIR$/../../pre-git-fix/tbd/mSpigot">
-      <sourceFolder url="file://$MODULE_DIR$/../../pre-git-fix/tbd/mSpigot/mSpigot-api/src/main/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../pre-git-fix/tbd/mSpigot/mSpigot-server/src/main/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../pre-git-fix/tbd/mSpigot/spigot-server/src/main/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../pre-git-fix/tbd/mSpigot/spigot-api/src/main/javadoc" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../pre-git-fix/tbd/mSpigot/spigot-server/src/test/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../pre-git-fix/tbd/mSpigot/spigot-api/src/test/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../pre-git-fix/tbd/mSpigot/mSpigot-api/src/test/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../pre-git-fix/tbd/mSpigot/mSpigot-server/src/test/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../pre-git-fix/tbd/mSpigot/spigot-api/src/main/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../pre-git-fix/tbd/mSpigot/mSpigot-api/src/main/javadoc" isTestSource="false" />
-    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
