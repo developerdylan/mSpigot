@@ -15,6 +15,10 @@ import net.minecraft.server.MathHelper;
 
 public class LightingUpdater {
 
+    /*
+        Just a test commit change!
+     */
+
     private int[] arrayI;
     private HashMap<Long, Chunk> chunks;
 
