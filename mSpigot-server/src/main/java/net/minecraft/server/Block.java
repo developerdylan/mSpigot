@@ -403,12 +403,12 @@ public class Block {
     }
 
     protected final void a(float f, float f1, float f2, float f3, float f4, float f5) {
-        this.minX = (double) f;
-        this.minY = (double) f1;
-        this.minZ = (double) f2;
-        this.maxX = (double) f3;
-        this.maxY = (double) f4;
-        this.maxZ = (double) f5;
+        this.minX = f;
+        this.minY = f1;
+        this.minZ = f2;
+        this.maxX = f3;
+        this.maxY = f4;
+        this.maxZ = f5;
     }
 
     public boolean d(IBlockAccess iblockaccess, int i, int j, int k, int l) {
@@ -548,8 +548,8 @@ public class Block {
 
     public MovingObjectPosition a(World world, int i, int j, int k, Vec3D vec3d, Vec3D vec3d1) {
         this.updateShape(world, i, j, k);
-        vec3d = vec3d.add((double) (-i), (double) (-j), (double) (-k));
-        vec3d1 = vec3d1.add((double) (-i), (double) (-j), (double) (-k));
+        vec3d = vec3d.add(-i, -j, -k);
+        vec3d1 = vec3d1.add(-i, -j, -k);
         Vec3D vec3d2 = vec3d.b(vec3d1, this.minX);
         Vec3D vec3d3 = vec3d.b(vec3d1, this.maxX);
         Vec3D vec3d4 = vec3d.c(vec3d1, this.minY);
@@ -636,20 +636,20 @@ public class Block {
                 b0 = 3;
             }
 
-            return new MovingObjectPosition(i, j, k, b0, vec3d8.add((double) i, (double) j, (double) k));
+            return new MovingObjectPosition(i, j, k, b0, vec3d8.add(i, j, k));
         }
     }
 
     private boolean a(Vec3D vec3d) {
-        return vec3d == null ? false : vec3d.b >= this.minY && vec3d.b <= this.maxY && vec3d.c >= this.minZ && vec3d.c <= this.maxZ;
+        return vec3d != null && (vec3d.b >= this.minY && vec3d.b <= this.maxY && vec3d.c >= this.minZ && vec3d.c <= this.maxZ);
     }
 
     private boolean b(Vec3D vec3d) {
-        return vec3d == null ? false : vec3d.a >= this.minX && vec3d.a <= this.maxX && vec3d.c >= this.minZ && vec3d.c <= this.maxZ;
+        return vec3d != null && (vec3d.a >= this.minX && vec3d.a <= this.maxX && vec3d.c >= this.minZ && vec3d.c <= this.maxZ);
     }
 
     private boolean c(Vec3D vec3d) {
-        return vec3d == null ? false : vec3d.a >= this.minX && vec3d.a <= this.maxX && vec3d.b >= this.minY && vec3d.b <= this.maxY;
+        return vec3d != null && (vec3d.a >= this.minX && vec3d.a <= this.maxX && vec3d.b >= this.minY && vec3d.b <= this.maxY);
     }
 
     public void wasExploded(World world, int i, int j, int k, Explosion explosion) {}
@@ -825,7 +825,7 @@ public class Block {
     }
 
     public static boolean a(Block block, Block block1) {
-        return block != null && block1 != null ? (block == block1 ? true : block.c(block1)) : false;
+        return (block != null && block1 != null) && (block == block1 || block.c(block1));
     }
 
     public boolean isComplexRedstone() {
