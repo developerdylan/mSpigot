@@ -302,7 +302,7 @@ public class SpigotConfig
 
     public static int timeoutTime = 10;
     public static boolean restartOnCrash = true;
-    public static String restartScript = "./start.sh";
+    public static String restartScript = "./start.bat";
     public static String restartMessage;
     private static void watchdog()
     {

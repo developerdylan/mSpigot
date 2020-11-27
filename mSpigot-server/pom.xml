@@ -16,6 +16,8 @@
     <buildtag.suffix></buildtag.suffix>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
+    <source>1.8</source>
+    <target>1.8</target>
   </properties>
 
   <parent>
@@ -41,9 +43,9 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>org.bukkit</groupId>
+      <groupId>org.spigotmc</groupId>
       <artifactId>minecraft-server</artifactId>
-      <version>${minecraft.version}</version>
+      <version>1.7.10-SNAPSHOT</version>
       <type>jar</type>
       <scope>compile</scope>
     </dependency>
@@ -116,6 +118,12 @@
       <artifactId>fastutil</artifactId>
       <version>7.2.1</version>
     </dependency>
+      <dependency>
+          <groupId>com.ddylan</groupId>
+          <artifactId>mSpigot-api</artifactId>
+          <version>1.7.10-R0.1-SNAPSHOT</version>
+          <scope>compile</scope>
+      </dependency>
   </dependencies>
 
   <!-- This builds a completely 'ready to start' jar with all dependencies inside -->

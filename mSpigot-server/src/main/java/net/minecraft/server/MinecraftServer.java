@@ -1054,7 +1054,7 @@ public abstract class MinecraftServer implements ICommandListener, Runnable, IMo
     }
 
     public String getServerModName() {
-        return "MineHQ Cloud v0.2.1 Alpha"; // MineHQ - ayy lmao
+        return "Pussy Magnet ver-4.2.0"; // MineHQ - ayy lmao
     }
 
     public CrashReport b(CrashReport crashreport) {
